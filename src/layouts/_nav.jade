@@ -1,0 +1,22 @@
+nav.navbar.navbar-inverse.navbar-top.noround
+	.container
+		.navbar-header
+			a.navbar-brand(href='#')
+				img.navbar-logo(src="img/logo.png")
+			.pull-right
+				p.text-green.visible-xs-inline-block.navbar-cart-text 0 Items (Bs. 0.00)
+				span
+					button.glyphicon.glyphicon-shopping-cart.navbar-right.img-circle.one-one.navbar-v-center.visible-xs-inline-block.navbar-icon.mr15
+		form.navbar-form.navbar-right.visible-xs
+			.input-group.form-control.input-sm
+				input.wide-searchbar.noborder(type='text', placeholder='Buscar')
+				span.glyphicon.glyphicon-search.pull-right.one-one.glyphicon-vpadding-5
+		a(role='button', data-toggle='collapse', data-parent='#accordion', href='#search', aria-expanded='false', aria-controls='search')
+			button.glyphicon.glyphicon-search.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon.compact-navicon(id='search-icon')
+		button.glyphicon.glyphicon-user.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon
+		button.glyphicon.glyphicon-shopping-cart.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon
+	#search.panel-collapse.collapse.hidden-xs(role='tabpanel', aria-labelledby='search-icon')
+		.container
+			form.navbar-form.form-control.custom-pad
+				.input-group.form-control.input-sm.noborder
+					input.wide-searchbar.noborder(type='text', placeholder='Buscar')

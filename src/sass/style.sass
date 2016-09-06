@@ -1,0 +1,83 @@
+$verde: #d9e021
+$gris-o: #222222
+$blanco: #fff
+
+=transicion($valor)
+  -webkit-transition: $valor
+  -moz-transition: $valor
+  -o-transition: $valor
+  -ms-transition: $valor
+  transition: $valor
+
+.navbar-default
+  background-color: $gris-o
+
+.navbar-default.navbar-nav>li>a
+  color: $blanco
+  +transicion(all 400ms ease)
+
+.navbar-default.navbar-nav>li>a:hover
+  color: $verde
+
+.noround
+  border-radius: 0px
+
+.parrafo
+  font:
+    size: 1em
+
+.one-one
+  height: 2em
+  width: 2em
+
+.navbar-v-center
+  margin: .75em .5em
+
+$sm-view: 768px
+
+.wide-searchbar
+  width: 98%
+  @media screen and (max-width: $sm-view)
+    width: 92%
+
+.input-group.form-control.noborder.input-sm
+  width: 100%
+  padding: 5px 0px
+
+.wide-searchbar.noborder
+  margin: 2px 0px
+
+.glyphicon-vpadding-5
+  padding: 5px 0px
+
+.navbar-form.custom-pad
+  padding:
+    top: 0px
+    right: 0px
+    bottom: 0px
+    left: 15px
+
+.compact-navicon
+  margin-right: 0px
+
+.navbar-logo
+  height: 1.4em
+
+.navbar-icon
+  background-color: $gris-o
+  border: 1px solid $verde
+  color: $verde
+
+.noborder
+  border: none
+
+.mr15
+  margin-right: 15px
+
+.text-green
+  color: $verde
+
+.navbar-cart-text
+  font:
+    size: .8em
+    weight: 300

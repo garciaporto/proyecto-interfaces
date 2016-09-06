@@ -1,0 +1,72 @@
+.navbar-default {
+  background-color: #222222; }
+
+.navbar-default.navbar-nav > li > a {
+  color: #fff;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  transition: all 400ms ease; }
+
+.navbar-default.navbar-nav > li > a:hover {
+  color: #d9e021; }
+
+.noround {
+  border-radius: 0px; }
+
+.parrafo {
+  font-size: 1em; }
+
+.one-one {
+  height: 2em;
+  width: 2em; }
+
+.navbar-v-center {
+  margin: .75em .5em; }
+
+.wide-searchbar {
+  width: 98%; }
+  @media screen and (max-width: 768px) {
+    .wide-searchbar {
+      width: 92%; } }
+
+.input-group.form-control.noborder.input-sm {
+  width: 100%;
+  padding: 5px 0px; }
+
+.wide-searchbar.noborder {
+  margin: 2px 0px; }
+
+.glyphicon-vpadding-5 {
+  padding: 5px 0px; }
+
+.navbar-form.custom-pad {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px; }
+
+.compact-navicon {
+  margin-right: 0px; }
+
+.navbar-logo {
+  height: 1.4em; }
+
+.navbar-icon {
+  background-color: #222222;
+  border: 1px solid #d9e021;
+  color: #d9e021; }
+
+.noborder {
+  border: none; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.text-green {
+  color: #d9e021; }
+
+.navbar-cart-text {
+  font-size: .8em;
+  font-weight: 300; }
