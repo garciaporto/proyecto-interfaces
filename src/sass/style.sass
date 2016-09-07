@@ -20,10 +20,6 @@ $blanco: #fff
 .noround
   border-radius: 0px
 
-.parrafo
-  font:
-    size: 1em
-
 .one-one
   height: 2em
   width: 2em
@@ -101,6 +97,58 @@ h1, h2, h3, h4, h5, h6
   background-color: $gris-o
   font-family: 'oswald'
   letter-spacing: .03em
+
+.footer-list
+  list-style: none
+  padding: 0px
+  line-height: 2em
+  letter-spacing: .04em
+
+.footer-list>li>a
+  color: $gris-c
+  font-weight: 300
+  font-size: .9em
+
+.footer-list>li>a:hover
+  color: $verde
+  +transicion(all 300ms ease)
+  text-decoration: none
+
+.footer-list>li>a:active
+  color: $blanco
+  text-decoration: none
+
+.footer-social
+  font:
+    weight: 400
+    size: 1.5em
+
+.footer-logo
+  height: 1.5em
+
+.legal
+  font:
+    size: .8em
+    weight: 300
+
+.xs-center
+  @media screen and (max-width: $sm-view)
+    text-align: center
+    margin:
+      left: auto
+      right: auto
+
+.jumbo-bg
+  background-image: url('img/carrusel-1.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  height: 100%
+
+#jumbo
+  width: 100%
+  height: 100vh !important
+  background-image: url("img/carrusel-1.jpg")
+//MARGENES
 
 .mt-3
   margin-top: 3px

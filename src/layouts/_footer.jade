@@ -1,11 +1,11 @@
 footer.container-fuid.footer-inverse
   .container
     .row
-      .col-sm-6
+      .col-sm-6.mt-50.hidden-xs
         .col-sm-12.mb-20
-          img(src='img/logo.png')
-        .col-sm-4
-          ul
+          img.footer-logo(src='img/logo-bn.png')
+        .col-sm-6.hidden-xs
+          ul.footer-list
             li
               a(href="#") Home
             li
@@ -15,36 +15,40 @@ footer.container-fuid.footer-inverse
             li
               a(href="#") Blog
             li
-              a(hre  f="#") Contacto
-        .col-sm-4
-          ul
+              a(href="#") Contacto
+        .col-sm-6.hidden-xs
+          ul.footer-list
             li
-              a(href="#") Elemento
+              a(href="#") Política de Envío
             li
-              a(href="#") Elemento
+              a(href="#") Devoluciones
             li
-              a(href="#") Elemento
+              a(href="#") Atención al Cliente
             li
-              a(href="#") Elemento
+              a(href="#") Danos tu Opinión
+            li
+              a(href="#") Mapa del Sitio
+        
+      .col-sm-6.mt-50.xs-center
+        h4.text-uppercase.mb-20 suscríbete a nuestro newsletter
+        form.navbar-form.form-control.custom-pad.xs-center
+          input.input-group.form-control.input-sm.noborder.xs-center(type='email', placeholder='Ingresa tu e-mail')
+        button.btn-green.text-uppercase.mt-3.xs-center enviar
+        .row
+          .col-sm-12.mt-20
+            ul.footer-list.list-inline.footer-social
               li
-              a(href="#") Elemento
-        .col-sm-4
-          ul
-            li
-              a(href="#") Elemento
-            li
-              a(href="#") Elemento
-            li
-              a(href="#") Elemento
-            li
-              a(href="#") Elemento
-            li
-              a(href="#") Elemento
-      .col-sm-6
-        .col-sm-8
-          h4.text-uppercase.mb-20 suscríbete a nuestro newsletter
-          form.navbar-form.form-control.custom-pad
-            input.input-group.form-control.input-sm.noborder(type='email', placeholder='Ingresa tu e-mail')
-          button.btn-green.text-uppercase.mt-3 enviar
-      hr
-      p.text-center &copy; José Castro
+                a(href="#")
+                  span.socicon-facebook
+              li
+                a(href="#")
+                  span.socicon-twitter
+              li
+                a(href="#")
+                  span.socicon-instagram
+              li
+                a(href="#")
+                  span.socicon-googleplus
+      .col-sm-12
+        hr
+        p.text-center.legal.mb-20 &copy; 2016 3Diseños. Todos los derechos reservados.
