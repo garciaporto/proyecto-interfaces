@@ -5,11 +5,13 @@
   <title>Home</title>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300"/>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-top noround">
+  <nav class="navbar navbar-inverse navbar-top navbar-static-top">
     <div class="container">
-      <div class="navbar-header"><a href="#" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"/></a>
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"/></a>
         <div class="pull-right">
           <p class="text-green visible-xs-inline-block navbar-cart-text">0 Items (Bs. 0.00)</p><span>
             <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center visible-xs-inline-block navbar-icon mr15"></button></span>
@@ -17,9 +19,17 @@
       </div>
       <form class="navbar-form navbar-right visible-xs">
         <div class="input-group form-control input-sm">
-          <input type="text" placeholder="Buscar" class="wide-searchbar noborder"/><span aria-hidden="true" class="glyphicon glyphicon-search pull-right one-one glyphicon-vpadding-5"></span>
+          <input type="text" placeholder="Buscar" class="wide-searchbar noborder"/><span class="glyphicon glyphicon-search pull-right one-one glyphicon-vpadding-5"></span>
         </div>
-      </form><a role="button" data-toggle="collapse" data-parent="#accordion" href="#search" aria-expanded="false" aria-controls="search">
+      </form>
+      <div id="menu" class="collapse navbar-collapse navbar-right menu-btn text-green text-uppercase">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div><a role="button" data-toggle="collapse" data-parent="#accordion" href="#search" aria-expanded="false" aria-controls="search">
         <button id="search-icon" class="glyphicon glyphicon-search navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon compact-navicon"></button></a>
       <button class="glyphicon glyphicon-user navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button>
       <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button>
@@ -37,9 +47,53 @@
   <div class="jumbotron">
     <h1>Hola Curso</h1>
   </div>
-  <footer class="container mt100">
-    <hr/>
-    <p class="text-center">&copy; José Castro</p>
+  <footer class="container-fuid footer-inverse">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-sm-12 mb-20"><img src="img/logo.png"/></div>
+          <div class="col-sm-4">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Tienda</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a hre="hre" f="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul>
+              <li><a href="#">Elemento</a></li>
+              <li><a href="#">Elemento</a></li>
+              <li><a href="#">Elemento</a></li>
+              <li><a href="#">Elemento</a>
+                <li></li><a href="#">Elemento</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul>
+              <li><a href="#">Elemento</a></li>
+              <li><a href="#">Elemento</a></li>
+              <li><a href="#">Elemento</a></li>
+              <li><a href="#">Elemento</a></li>
+              <li><a href="#">Elemento</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-8">
+            <h4 class="text-uppercase mb-20">suscríbete a nuestro newsletter</h4>
+            <form class="navbar-form form-control custom-pad">
+              <input type="email" placeholder="Ingresa tu e-mail" class="input-group form-control input-sm noborder"/>
+            </form>
+            <button class="btn-green text-uppercase mt-3">enviar</button>
+          </div>
+        </div>
+        <hr/>
+        <p class="text-center">&copy; José Castro</p>
+      </div>
+    </div>
   </footer>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
