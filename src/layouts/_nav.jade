@@ -27,10 +27,27 @@ nav.navbar.navbar-inverse.navbar-fixed-top
 					a(href="#") Contacto
 		a(role='button', data-toggle='collapse', data-parent='#accordion', href='#search', aria-expanded='false', aria-controls='search')
 			button.glyphicon.glyphicon-search.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon.compact-navicon(id='search-icon')
-		button.glyphicon.glyphicon-user.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon
-		button.glyphicon.glyphicon-shopping-cart.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon
+		a(href="#", role="button", type='button', data-toggle='modal', data-target='#log-in',)
+			button.glyphicon.glyphicon-user.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon
+		a(href="cart.thml", role="button")
+			button.glyphicon.glyphicon-shopping-cart.navbar-right.img-circle.one-one.navbar-v-center.hidden-xs.navbar-icon
 	#search.panel-collapse.collapse.hidden-xs(role='tabpanel', aria-labelledby='search-icon')
 		.container
 			form.navbar-form.form-control.custom-pad
 				.input-group.form-control.input-sm.noborder
 					input.wide-searchbar.noborder(type='text', placeholder='Buscar')
+
+#log-in.modal.fade(tabindex='-1', role='dialog', aria-labelledby='LogLabel')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true') ×
+				h4#LogLabel.modal-title.text-uppercase Ingresar
+			.modal-body
+				form.text-center
+					.form-group
+						input#recipient-name.form-control(type='text', placeholder='Usuario', name='user')
+					.form-group
+						input#recipient-name.form-control(type='password', placeholder='Password', name='psw')
+					button.btn.btn-green.btn-dgray.text-uppercase(type='button') Ingresar
