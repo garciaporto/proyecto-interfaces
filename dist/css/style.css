@@ -113,6 +113,11 @@ p {
 .bt-green:focus {
   text-decoration: none; }
 
+a.btn-green:focus {
+  text-decoration: none;
+  color: #d9e021;
+  border-color: #d9e021; }
+
 .btn-dgray {
   border-color: #222222;
   color: #222222; }
@@ -203,7 +208,7 @@ p {
   color: #fff; }
 
 .traslucido {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
@@ -240,6 +245,14 @@ p {
 
 .rate {
   margin: 0px 2px 10px 2px; }
+
+.sumario {
+  padding: 2em;
+  background-color: transparent;
+  border: 1px solid #222222; }
+
+.table > tbody > tr > td.noborder {
+  border: 0px; }
 
 select {
   width: 300%;

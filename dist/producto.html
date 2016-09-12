@@ -12,7 +12,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"/></a>
+        <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"/></a>
         <div class="pull-right">
           <p class="text-green visible-xs-inline-block navbar-cart-text">0 Items (Bs. 0.00)</p><span>
             <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center visible-xs-inline-block navbar-icon mr15"></button></span>
@@ -26,13 +26,13 @@
       <div id="menu" class="collapse navbar-collapse navbar-right menu-btn text-green text-uppercase">
         <ul class="nav navbar-nav">
           <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Tienda</a></li>
+          <li class="active"><a href="#">Tienda</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </div><a role="button" data-toggle="collapse" data-parent="#accordion" href="#search" aria-expanded="false" aria-controls="search">
         <button id="search-icon" class="glyphicon glyphicon-search navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon compact-navicon"></button></a><a href="#" role="button" type="button" data-toggle="modal" data-target="#log-in">
-        <button class="glyphicon glyphicon-user navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a><a href="cart.thml" role="button">
+        <button class="glyphicon glyphicon-user navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a><a href="cart.html" role="button">
         <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a>
     </div>
     <div id="search" role="tabpanel" aria-labelledby="search-icon" class="panel-collapse collapse hidden-xs">
@@ -69,23 +69,13 @@
   <div class="container">
     <section class="pt-80">
       <ol class="breadcrumb text-uppercase">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Sección</a></li>
         <li class="active">Producto</li>
       </ol>
       <div class="row"></div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 mb-50">
         <article><img src="http://www.placehold.it/600x600" class="img-responsive"/></article>
-        <article>
-          <ul class="list-inline">
-            <li><a href="#"><img src="http://www.placehold.it/40x40" class="img-responsive"/></a></li>
-            <li><a href="#"><img src="http://www.placehold.it/40x40" class="img-responsive"/></a></li>
-            <li><a href="#"><img src="http://www.placehold.it/40x40" class="img-responsive"/></a></li>
-            <li><a href="#"><img src="http://www.placehold.it/40x40" class="img-responsive"/></a></li>
-            <li><a href="#"><img src="http://www.placehold.it/40x40" class="img-responsive"/></a></li>
-            <li><a href="#"><img src="http://www.placehold.it/40x40" class="img-responsive"/></a></li>
-          </ul>
-        </article>
       </div>
       <div class="col-sm-6">
         <article>
@@ -123,26 +113,26 @@
         <button type="button" class="btn-solid-dgray text-uppercase">Añadir al carrito</button>
       </div>
     </section>
-    <section class="col-sm-12 mb-40">
+    <section class="col-sm-12">
       <div class="row">
         <hr/>
-        <h2 class="text-uppercase mt-50 mb-30">Lo más vendido</h2>
-        <article class="col-sm-3"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+        <h2 class="text-uppercase mt-50">Lo más vendido</h2>
+        <article class="col-sm-4 col-md-3 mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
           <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad eaque cupiditate quibusdam nihil recusandae!</p>
           <h5>Bs. 2.500,00</h5>
         </article>
-        <article class="col-sm-3"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+        <article class="col-sm-4 col-md-3 mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
           <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa atque blanditiis, vero ab expedita ipsam.</p>
           <h5>Bs. 2.500,00</h5>
         </article>
-        <article class="col-sm-3"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+        <article class="col-sm-4 col-md-3 mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
           <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex sapiente assumenda aliquid, vitae libero.      </p>
           <h5>Bs. 2.500,00</h5>
         </article>
-        <article class="col-sm-3"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+        <article class="col-md-3 hidden-sm mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
           <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex sapiente assumenda aliquid, vitae libero.      </p>
           <h5>Bs. 2.500,00</h5>

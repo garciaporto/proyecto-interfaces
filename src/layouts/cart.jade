@@ -1,57 +1,52 @@
 extends layout
 
 block content
-  .container
-    section.pt-80
-      ol.breadcrumb.text-uppercase
-        li
-          a(href='index.html') Home
-        li
-          a(href='#') Sección
-        li.active Producto
-      .row
-      .col-sm-6.mb-50
-        article
-          img.img-responsive(src="http://www.placehold.it/600x600")
-      .col-sm-6
-        article
-          h1.h3.mt-0 Lorem ipsum dolor sit amet.
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nihil nisi modi veniam tenetur recusandae rerum, sed nam odio repellendus aut! Harum illum optio facilis ut deleniti, beatae mollitia reiciendis.
-        div
-          span.glyphicon.glyphicon-star.rate
-          span.glyphicon.glyphicon-star.rate
-          span.glyphicon.glyphicon-star.rate
-          span.glyphicon.glyphicon-star.rate
-          span.glyphicon.glyphicon-star.rate
-        div
-          span.text-mini.text-uppercase compartir
-          ul.footer-list.list-inline.footer-social
-            li
-              a(href="#")
-                span.socicon-facebook
-            li
-              a(href="#")
-                span.socicon-twitter
-            li
-              a(href="#")
-                span.socicon-instagram
-            li
-              a(href="#")
-                span.socicon-googleplus
-        .input-group
-          form
-            .form-group
-              select(name='talla')
-                option(value='s') S
-                option(value='m') M
-                option(value='l') L
-            .form-group
-              select(name='color')
-                option(value='blanco') Blanco
-                option(value='azul') Azul
-                option(value='naranja') Naranja
-                option(value='verde') Verde
-        button.btn-solid-dgray.text-uppercase(type='button') Añadir al carrito
+  .container.pt-80
+    .row
+    .col-sm-8.mb-50
+      article
+        img.img-responsive(src="http://www.placehold.it/600x600")
+    .col-sm-4.hidden-xs
+      .sumario
+        h2.h3.text-uppercase.text-center.mb-50 Resumen de compra
+        div.table-responsive
+          table.table
+            tr
+              td.noborder
+                p.text-left Sub-Total
+              td.noborder
+                p.text-right 0,00
+            tr
+              td.noborder
+                p.text-left Descuento
+              td.noborder
+                p.text-right 0,00
+            tr
+              td.noborder
+                p.text-left Manejo y Envío
+              td.noborder
+                p.text-right 0,00
+            tr
+              td 
+                p.text-left Total
+              td
+                p.text-right 0,00
+        div.text-center
+          button.btn-green.btn-dgray.text-uppercase Pagar
+      .input-group
+        form
+          .form-group
+            select(name='talla')
+              option(value='s') S
+              option(value='m') M
+              option(value='l') L
+          .form-group
+            select(name='color')
+              option(value='blanco') Blanco
+              option(value='azul') Azul
+              option(value='naranja') Naranja
+              option(value='verde') Verde
+      button.btn-solid-dgray.text-uppercase(type='button') Añadir al carrito
     section.col-sm-12
       .row
         hr

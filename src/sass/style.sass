@@ -1,7 +1,10 @@
 $verde: #d9e021
 $gris-o: #222222
 $gris-c: #9d9d9d
+$gris-c2: #cccccc
 $blanco: #fff
+$sm-view: 768px
+$md-view: 992
 
 =transicion($valor)
   -webkit-transition: $valor
@@ -26,8 +29,6 @@ $blanco: #fff
 
 .navbar-v-center
   margin: .75em .5em
-
-$sm-view: 768px
 
 .wide-searchbar
   width: 98%
@@ -121,6 +122,11 @@ p
 .bt-green:focus
   text-decoration: none
 
+a.btn-green:focus
+  text-decoration: none
+  color: $verde
+  border-color: $verde
+
 .btn-dgray
   border-color: $gris-o
   color: $gris-o
@@ -206,7 +212,7 @@ p
   color: $blanco
 
 .traslucido
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.6)
   position: absolute
   top: 0
   left: 0
@@ -239,6 +245,15 @@ p
 
 .rate
   margin: 0px 2px 10px 2px
+
+.sumario
+  padding: 2em
+  background-color: transparent
+  border: 1px solid $gris-o
+
+.table>tbody>tr>td.noborder
+  border: 0px
+
 
 //FORMS
 

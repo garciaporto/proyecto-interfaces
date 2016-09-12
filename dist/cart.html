@@ -12,7 +12,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"/></a>
+        <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"/></a>
         <div class="pull-right">
           <p class="text-green visible-xs-inline-block navbar-cart-text">0 Items (Bs. 0.00)</p><span>
             <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center visible-xs-inline-block navbar-icon mr15"></button></span>
@@ -26,13 +26,13 @@
       <div id="menu" class="collapse navbar-collapse navbar-right menu-btn text-green text-uppercase">
         <ul class="nav navbar-nav">
           <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Tienda</a></li>
+          <li class="active"><a href="#">Tienda</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </div><a role="button" data-toggle="collapse" data-parent="#accordion" href="#search" aria-expanded="false" aria-controls="search">
         <button id="search-icon" class="glyphicon glyphicon-search navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon compact-navicon"></button></a><a href="#" role="button" type="button" data-toggle="modal" data-target="#log-in">
-        <button class="glyphicon glyphicon-user navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a><a href="cart.thml" role="button">
+        <button class="glyphicon glyphicon-user navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a><a href="cart.html" role="button">
         <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a>
     </div>
     <div id="search" role="tabpanel" aria-labelledby="search-icon" class="panel-collapse collapse hidden-xs">
@@ -66,62 +66,113 @@
       </div>
     </div>
   </div>
-  <div id="jumbo" class="jumbotron">
-    <div class="traslucido">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center">
-            <div class="vcenter">
-              <article class="mb-40">
-                <h1 class="mb-20">Lorem ipsum dolor sit amet.</h1>
-                <p class="p-black mb-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptates ad vero maiores! Ea itaque, repellat aspernatur magnam officia quaerat omnis sapiente eligendi ipsa odio voluptatem aliquam harum ad perspiciatis?</p>
-              </article><a href="#" class="btn-green text-uppercase h3">botón</a>
-            </div>
-          </div>
+  <div class="container pt-80">
+    <div class="row"></div>
+    <div class="col-sm-8 mb-50">
+      <article><img src="http://www.placehold.it/600x600" class="img-responsive"/></article>
+    </div>
+    <div class="col-sm-4 hidden-xs">
+      <div class="sumario">
+        <h2 class="h3 text-uppercase text-center mb-50">Resumen de compra</h2>
+        <div class="table-responsive">
+          <table class="table">
+            <tr>
+              <td class="noborder">
+                <p class="text-left">Sub-Total</p>
+              </td>
+              <td class="noborder">
+                <p class="text-right">0,00</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="noborder">
+                <p class="text-left">Descuento</p>
+              </td>
+              <td class="noborder">
+                <p class="text-right">0,00</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="noborder">
+                <p class="text-left">Manejo y Envío</p>
+              </td>
+              <td class="noborder">
+                <p class="text-right">0,00</p>
+              </td>
+            </tr>
+            <tr>
+              <td> 
+                <p class="text-left">Total</p>
+              </td>
+              <td>
+                <p class="text-right">0,00</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="text-center">
+          <button class="btn-green btn-dgray text-uppercase">Pagar</button>
         </div>
       </div>
+      <div class="input-group">
+        <form>
+          <div class="form-group">
+            <select name="talla">
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select name="color">
+              <option value="blanco">Blanco</option>
+              <option value="azul">Azul</option>
+              <option value="naranja">Naranja</option>
+              <option value="verde">Verde</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <button type="button" class="btn-solid-dgray text-uppercase">Añadir al carrito</button>
     </div>
+    <section class="col-sm-12">
+      <div class="row">
+        <hr/>
+        <h2 class="text-uppercase mt-50">Lo más vendido</h2>
+        <article class="col-sm-4 col-md-3 mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+          <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad eaque cupiditate quibusdam nihil recusandae!</p>
+          <h5>Bs. 2.500,00</h5>
+        </article>
+        <article class="col-sm-4 col-md-3 mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+          <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa atque blanditiis, vero ab expedita ipsam.</p>
+          <h5>Bs. 2.500,00</h5>
+        </article>
+        <article class="col-sm-4 col-md-3 mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+          <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex sapiente assumenda aliquid, vitae libero.      </p>
+          <h5>Bs. 2.500,00</h5>
+        </article>
+        <article class="col-md-3 hidden-sm mb-30"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
+          <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex sapiente assumenda aliquid, vitae libero.      </p>
+          <h5>Bs. 2.500,00</h5>
+        </article>
+      </div>
+    </section>
+    <section class="col-sm-12 mb-50">
+      <div class="row">
+        <hr/>
+        <h2 class="text-uppercase mt-50 mb-30">comentarios</h2>
+        <div class="col-sm-2 col-md-1 text-center col-xs-3"><img src="http://www.placehold.it/150x150" class="img-responsive img-circle mb-20"/></div>
+        <div class="col-sm-10 col-md 11 col-xs-9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet accusantium nesciunt molestiae consequuntur nobis possimus, accusamus omnis dicta culpa excepturi soluta nihil placeat unde labore inventore, commodi. Consequatur, hic, eveniet?</p>
+          <div><span class="glyphicon glyphicon-star rate"></span><span class="glyphicon glyphicon-star rate"></span><span class="glyphicon glyphicon-star rate"></span><span class="glyphicon glyphicon-star rate"></span><span class="glyphicon glyphicon-star rate"></span></div>
+        </div>
+      </div>
+    </section>
   </div>
-  <section class="container">
-    <div class="row"></div>
-    <h2 class="text-uppercase mt-50 mb-30">Lo más buscado</h2>
-    <div class="row"></div>
-    <article class="col-sm-4"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
-      <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad eaque cupiditate quibusdam nihil recusandae!</p>
-      <h5>Bs. 2.500,00</h5>
-    </article>
-    <article class="col-sm-4"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
-      <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa atque blanditiis, vero ab expedita ipsam.</p>
-      <h5>Bs. 2.500,00</h5>
-    </article>
-    <article class="col-sm-4"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
-      <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex sapiente assumenda aliquid, vitae libero.      </p>
-      <h5>Bs. 2.500,00</h5>
-    </article>
-  </section>
-  <section class="container mb-50">
-    <div class="row">
-      <h2 class="text-uppercase mt-50 mb-30">Lo más vendido</h2>
-      <article class="col-sm-4"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
-        <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad eaque cupiditate quibusdam nihil recusandae!</p>
-        <h5>Bs. 2.500,00</h5>
-      </article>
-      <article class="col-sm-4"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
-        <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa atque blanditiis, vero ab expedita ipsam.</p>
-        <h5>Bs. 2.500,00</h5>
-      </article>
-      <article class="col-sm-4"><a href="producto.html"><img src="http://placehold.it/350x350" class="img-responsive"/></a>
-        <h3 class="text-uppercase h4">Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex sapiente assumenda aliquid, vitae libero.      </p>
-        <h5>Bs. 2.500,00</h5>
-      </article>
-    </div>
-  </section>
   <footer class="container-fuid footer-inverse">
     <div class="container">
       <div class="row">
