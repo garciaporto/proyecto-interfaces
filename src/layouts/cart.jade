@@ -4,49 +4,84 @@ block content
   .container.pt-80
     .row
     .col-sm-8.mb-50
-      article
-        img.img-responsive(src="http://www.placehold.it/600x600")
-    .col-sm-4.hidden-xs
+      h1.mt-0.text-uppercase Lista de compra
+      .mt-30
+        .row
+          .col-sm-2.col-xs-3
+            a(href="producto.html")
+              img.img-responsive(src="http://placehold.it/200x200", alt="")
+          .col-sm-10.col-xs-9
+            .row
+              .pull-left
+                h4.text-uppercase.mt-0 Lorem ipsum dolor sit amet.
+              .pull-right
+                button.remove &times;
+            .cart-item
+              .mt-10
+                p.cart-label-form Color: Blanco | Talla: M
+              .input-group
+                form
+                  .form-group
+                    label.cart-label-form(for='cantidad') Cantidad
+                    input#cantidad.cart-qty(type='text', placeholder='1')
+              div
+                p.cart-item-price Bs. 0,00 | Sub-Total: Bs. 0,00
+      .mt-40
+        .row
+          .col-sm-2.col-xs-3
+            a(href="producto.html")
+              img.img-responsive(src="http://placehold.it/200x200", alt="")
+          .col-sm-10.col-xs-9
+            .row
+              .pull-left
+                h4.text-uppercase.mt-0 Lorem ipsum dolor sit amet.
+              .pull-right
+                button.remove &times;
+            .cart-item
+              .mt-10
+                p.cart-label-form Color: Blanco | Talla: M
+              .input-group
+                form
+                  .form-group
+                    label.cart-label-form(for='cantidad') Cantidad
+                    input#cantidad.cart-qty(type='text', placeholder='1')
+              div
+                p.cart-item-price Bs. 0,00 | Sub-Total: Bs. 0,00
+      .cart-list-bottom.mt-40.pt-20
+        a.text-uppercase.hidden-xs(href="#") continuar comprando 
+        form.pull-right.form-wrapper
+          .form-group.input-wrapped
+            input#code(type='text', placeholder='Código de Descuento')
+            span.glyphicon.glyphicon-ok.pull-right.form-icon
+              //button.btn-solid-dgray.text-uppercase.pull-right.mt-20(type='button') Aplicar cupon de descuento
+    .col-sm-4
       .sumario
         h2.h3.text-uppercase.text-center.mb-50 Resumen de compra
         div.table-responsive
           table.table
             tr
               td.noborder
-                p.text-left Sub-Total
+                p.text-left.text-dgray Sub-Total
               td.noborder
-                p.text-right 0,00
+                p.text-right.text-dgray 0,00
             tr
               td.noborder
-                p.text-left Descuento
+                p.text-left.text-dgray Descuento
               td.noborder
-                p.text-right 0,00
+                p.text-right.text-dgray 0,00
             tr
               td.noborder
-                p.text-left Manejo y Envío
+                p.text-left.text-dgray Manejo y Envío
               td.noborder
-                p.text-right 0,00
+                p.text-right.text-dgray 0,00
             tr
               td 
-                p.text-left Total
+                p.text-left.text-dgray.total Total
               td
-                p.text-right 0,00
+                p.text-right.text-dgray.total 0,00
+                  span.pull-left Bs.
         div.text-center
           button.btn-green.btn-dgray.text-uppercase Pagar
-      .input-group
-        form
-          .form-group
-            select(name='talla')
-              option(value='s') S
-              option(value='m') M
-              option(value='l') L
-          .form-group
-            select(name='color')
-              option(value='blanco') Blanco
-              option(value='azul') Azul
-              option(value='naranja') Naranja
-              option(value='verde') Verde
-      button.btn-solid-dgray.text-uppercase(type='button') Añadir al carrito
     section.col-sm-12
       .row
         hr

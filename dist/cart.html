@@ -69,43 +69,113 @@
   <div class="container pt-80">
     <div class="row"></div>
     <div class="col-sm-8 mb-50">
-      <article><img src="http://www.placehold.it/600x600" class="img-responsive"/></article>
+      <h1 class="mt-0 text-uppercase">Lista de compra</h1>
+      <div class="mt-30">
+        <div class="row">
+          <div class="col-sm-2 col-xs-3"><a href="producto.html"><img src="http://placehold.it/200x200" alt="" class="img-responsive"/></a></div>
+          <div class="col-sm-10 col-xs-9">
+            <div class="row">
+              <div class="pull-left">
+                <h4 class="text-uppercase mt-0">Lorem ipsum dolor sit amet.</h4>
+              </div>
+              <div class="pull-right">
+                <button class="remove">&times;</button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="mt-10">
+                <p class="cart-label-form">Color: Blanco | Talla: M</p>
+              </div>
+              <div class="input-group">
+                <form>
+                  <div class="form-group">
+                    <label for="cantidad" class="cart-label-form">Cantidad</label>
+                    <input id="cantidad" type="text" placeholder="1" class="cart-qty"/>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <p class="cart-item-price">Bs. 0,00 | Sub-Total: Bs. 0,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40">
+        <div class="row">
+          <div class="col-sm-2 col-xs-3"><a href="producto.html"><img src="http://placehold.it/200x200" alt="" class="img-responsive"/></a></div>
+          <div class="col-sm-10 col-xs-9">
+            <div class="row">
+              <div class="pull-left">
+                <h4 class="text-uppercase mt-0">Lorem ipsum dolor sit amet.</h4>
+              </div>
+              <div class="pull-right">
+                <button class="remove">&times;</button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="mt-10">
+                <p class="cart-label-form">Color: Blanco | Talla: M</p>
+              </div>
+              <div class="input-group">
+                <form>
+                  <div class="form-group">
+                    <label for="cantidad" class="cart-label-form">Cantidad</label>
+                    <input id="cantidad" type="text" placeholder="1" class="cart-qty"/>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <p class="cart-item-price">Bs. 0,00 | Sub-Total: Bs. 0,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-list-bottom mt-40 pt-20"><a href="#" class="text-uppercase hidden-xs">continuar comprando </a>
+        <form class="pull-right form-wrapper">
+          <div class="form-group input-wrapped">
+            <input id="code" type="text" placeholder="Código de Descuento"/><span class="glyphicon glyphicon-ok pull-right form-icon">
+              <!--button.btn-solid-dgray.text-uppercase.pull-right.mt-20(type='button') Aplicar cupon de descuento--></span>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="col-sm-4 hidden-xs">
+    <div class="col-sm-4">
       <div class="sumario">
         <h2 class="h3 text-uppercase text-center mb-50">Resumen de compra</h2>
         <div class="table-responsive">
           <table class="table">
             <tr>
               <td class="noborder">
-                <p class="text-left">Sub-Total</p>
+                <p class="text-left text-dgray">Sub-Total</p>
               </td>
               <td class="noborder">
-                <p class="text-right">0,00</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="noborder">
-                <p class="text-left">Descuento</p>
-              </td>
-              <td class="noborder">
-                <p class="text-right">0,00</p>
+                <p class="text-right text-dgray">0,00</p>
               </td>
             </tr>
             <tr>
               <td class="noborder">
-                <p class="text-left">Manejo y Envío</p>
+                <p class="text-left text-dgray">Descuento</p>
               </td>
               <td class="noborder">
-                <p class="text-right">0,00</p>
+                <p class="text-right text-dgray">0,00</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="noborder">
+                <p class="text-left text-dgray">Manejo y Envío</p>
+              </td>
+              <td class="noborder">
+                <p class="text-right text-dgray">0,00</p>
               </td>
             </tr>
             <tr>
               <td> 
-                <p class="text-left">Total</p>
+                <p class="text-left text-dgray total">Total</p>
               </td>
               <td>
-                <p class="text-right">0,00</p>
+                <p class="text-right text-dgray total">0,00<span class="pull-left">Bs.</span></p>
               </td>
             </tr>
           </table>
@@ -114,26 +184,6 @@
           <button class="btn-green btn-dgray text-uppercase">Pagar</button>
         </div>
       </div>
-      <div class="input-group">
-        <form>
-          <div class="form-group">
-            <select name="talla">
-              <option value="s">S</option>
-              <option value="m">M</option>
-              <option value="l">L</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <select name="color">
-              <option value="blanco">Blanco</option>
-              <option value="azul">Azul</option>
-              <option value="naranja">Naranja</option>
-              <option value="verde">Verde</option>
-            </select>
-          </div>
-        </form>
-      </div>
-      <button type="button" class="btn-solid-dgray text-uppercase">Añadir al carrito</button>
     </div>
     <section class="col-sm-12">
       <div class="row">

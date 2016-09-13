@@ -4,7 +4,7 @@ $gris-c: #9d9d9d
 $gris-c2: #cccccc
 $blanco: #fff
 $sm-view: 768px
-$md-view: 992
+$md-view: 992px
 
 =transicion($valor)
   -webkit-transition: $valor
@@ -254,6 +254,73 @@ a.btn-green:focus
 .table>tbody>tr>td.noborder
   border: 0px
 
+.text-dgray
+  color: $gris-o
+
+.total
+  font-weight: bold
+  font-size: 1.5em
+
+.cart-item
+  border-top: 1px solid $gris-c
+  padding: 0px -10px 20px 0px
+  margin: 0px 0px 20px -15px
+
+.cart-qty
+  width: 20%
+  text-align: center
+
+.cart-label-form
+  color: $gris-o
+  font:
+    size: .8em
+    weight: 400
+
+.cart-item-price
+  color: $gris-o
+  font:
+    size: 1.1em
+    weight: 400
+    style: italic
+
+.cart-list-bottom
+  border-top: 1px solid $gris-o
+
+button.remove
+  -webkit-apperance: none
+  cursor: pointer
+  background: 0 0
+  border: 0
+
+.remove
+  font:
+    size: 1.5em
+    weight: 700
+  color: $gris-c
+  margin-right: 10px
+  margin-top: -5px
+
+//TABLAS
+
+.table-responsive
+  @media screen and (max-width: 767px)
+    border: 0px
+
+//VINCULOS
+
+a
+  color: $gris-o
+  text-decoration: none
+  font-weight: bold
+
+a:hover
+  text-decoration: none
+  color: $gris-c
+  +transicion(all 300ms ease)
+
+a:focus
+  text-decoration: none
+  color: $gris-c
 
 //FORMS
 
@@ -261,6 +328,23 @@ select
   width: 300%
   border: 1px solid $gris-o
   background-color: transparent
+
+input
+  border: 0px
+
+.form-wrapper
+  border: 1px solid $gris-o
+
+.input-wrapped
+  margin: 5px auto
+  padding: 0px 10px
+
+.form-icon
+  border-radius: 100%
+  font-size: .7em
+  color: $blanco
+  background-color: $gris-o
+  padding: .5em
 
 //MARGENES
 
@@ -298,6 +382,14 @@ select
 //PADDING
 .pad-0
   padding: 0px
+.pt-10
+  padding-top: 10px
+.pt-20
+  padding-top: 20px
+.pt-30
+  padding-top: 30px
+.pt-40
+  padding-top: 40px
 .pt-50
   padding-top: 50px
 .pt-80
