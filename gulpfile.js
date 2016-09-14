@@ -11,6 +11,7 @@ gulp.task('mover', function(){
   gulp.src('./bower_components/jquery/dist/jquery.min.js').pipe(gulp.dest('./dist/js'));
   gulp.src('.bower_components/sticky-kit/jquery.sticky-kit.min.js').pipe(gulp.dest('.dist/js'));
   gulp.src('./src/img/*.*').pipe(gulp.dest('./dist/img'));
+  gulp.src('./src/js/*.js').pipe(gulp.dest('./dist/js'));
 })
 
 // SASS
@@ -47,5 +48,6 @@ gulp.task('jade',function(){
   gulp.task('default',['server'],function(){
   	gulp.watch('./src/sass/*.sass',['sass']);
     gulp.watch('./src/img/*.*',['mover']);
+    gulp.watch('./src/js/*.js',['mover']);
     gulp.watch('./src/layouts/*.jade',['jade']);
   });

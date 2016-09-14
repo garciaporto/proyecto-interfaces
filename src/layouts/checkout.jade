@@ -1,9 +1,9 @@
 extends layout
 
 block content
-  .container.pt-80
+  .container(data-sticky_parent)
     .row
-    .col-sm-8.mb-50
+    .col-sm-8.mb-50.mt-80
       h1.mt-0.text-uppercase checkout
       .mt-30
         .col-sm-12
@@ -80,7 +80,6 @@ block content
                       label
                         input(type='checkbox')
                         | Guardar esta tarjeta para futuras compras
-                
                 #deposito.tab-panel.payment-panel(role='tabpanel')
                   form
                     .row
@@ -97,8 +96,8 @@ block content
                       .form-group.col-sm-4
                         label.cart-label-form.text-uppercase(for='monto') Monto depositado
                         input#monto.form-control(type='text')
-    .col-sm-4
-      .sumario
+    .col-sm-4.mt-80
+      #sumario.sumario(data-sticky_column)
         h2.h3.text-uppercase.text-center.mb-50 Resumen de compra
         div.table-responsive
           table.table
