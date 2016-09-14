@@ -1,0 +1,127 @@
+extends layout
+
+block content
+  .container.pt-80
+    .row
+    .col-sm-8.mb-50
+      h1.mt-0.text-uppercase checkout
+      .mt-30
+        .col-sm-12
+          .row
+            .checkout-title-section
+              h4.text-uppercase datos de envío
+            div
+              form
+                .row
+                  .form-group.col-sm-6
+                    label.cart-label-form.text-uppercase(for='name') Nombre
+                    input#name.form-control(type='text')
+                  .form-group.col-sm-6
+                    label.cart-label-form.text-uppercase(for='last') Apellido
+                    input#last.form-control(type='text')
+                  .form-group.col-sm-12
+                    label.cart-label-form.text-uppercase(for='direccion') Dirección
+                    input#direccion.form-control(type="text")
+                  .form-group.col-sm-6
+                    label.cart-label-form.text-uppercase(for="pais") País
+                    select#pais.form-control
+                      option Venezuela
+                      option Colombia
+                      option Brasil
+                      option Ecuador
+                      option Bolivia
+                      option Uruguay
+                      option Paraguay
+                      option Chile
+                      option Argentina
+                  .form-group.col-sm-6
+                    label.cart-label-form.text-uppercase(for='zip') Zona Postal
+                    input#zip.form-control(type='text')
+                  .form-group.col-sm-6
+                    label.cart-label-form.text-uppercase(for='phone') Teléfono
+                    input#phone.form-control(type='text')
+                  .form-group.col-sm-6
+                    label.cart-label-form.text-uppercase(for='mail') Correo Electrónico
+                    input.form-control(type='email')
+            .checkout-title-section.mt-30
+              h4.text-uppercase método de envío
+            div
+              form
+                .form-group
+                  select#envio.form-control
+                    option MRW - Entrega 2 a 7 dias hábiles (Bs. 890)
+                    option Grupo ZOOM - Entrega 2 a 7 días hábiles (Bs. 1.900)
+                    option Domesa - 2 a 7 días hábiles (Bs. 900)
+            .checkout-title-section.mt-50
+              h4.text-uppercase método de pago
+            div
+              ul.nav.nav-tabs(role='tablist')
+                li.active(role='presentation')
+                  a(href="#tdc", aria-controls='tdc', role='tab', data-toggle='tab') Tarjeta de Crédito
+                li(role='presentation')
+                  a(href="#deposito", aria-controls='deposito', role='tab', data-toggle='tab') Depósito Bancario
+              .tab-content
+                #tdc.tab-pane.active.payment-panel(role='tabpanel')
+                  form
+                    .form-group
+                      label.cart-label-form.text-uppercase(for='card-num') Número de Tarjeta
+                      input#card-num.form-control(type='text')
+                    .form-group
+                      label.cart-label-form.text-uppercase(for=card-name) Nombre del Tarjetahabiente
+                      input#card-name.form-control(type='text')
+                    .row
+                      .form-group.col-sm-6
+                        label.cart-label-form.text-uppercase(for='exp-date') Fecha de Vencimiento
+                        input#exp-date.form-control(type='text')
+                      .form-group.col-sm-6
+                        label.cart-label-form.text-uppercase(for='cvv') CVV
+                        input#cvv.form-control(type='password')
+                    .checkbox
+                      label
+                        input(type='checkbox')
+                        | Guardar esta tarjeta para futuras compras
+                
+                #deposito.tab-panel.payment-panel(role='tabpanel')
+                  form
+                    .row
+                      .form-group.col-sm-4
+                        label.cart-label-form.text-uppercase(for='num-deposito') Número de Depósito
+                        input#num-deposito.form-control(type='text')
+                      .form-group.col-sm-4
+                        label.cart-label-form.text-uppercase(for='banco') Banco
+                        select#banco.form-control
+                          option Bancaribe
+                          option Banco Exterior
+                          option Banco Mercantil
+                          option Banesco
+                      .form-group.col-sm-4
+                        label.cart-label-form.text-uppercase(for='monto') Monto depositado
+                        input#monto.form-control(type='text')
+    .col-sm-4
+      .sumario
+        h2.h3.text-uppercase.text-center.mb-50 Resumen de compra
+        div.table-responsive
+          table.table
+            tr
+              td.noborder
+                p.text-left.text-dgray Sub-Total
+              td.noborder
+                p.text-right.text-dgray 0,00
+            tr
+              td.noborder
+                p.text-left.text-dgray Descuento
+              td.noborder
+                p.text-right.text-dgray 0,00
+            tr
+              td.noborder
+                p.text-left.text-dgray Manejo y Envío
+              td.noborder
+                p.text-right.text-dgray 0,00
+            tr
+              td 
+                p.text-left.text-dgray.total Total
+              td
+                p.text-right.text-dgray.total 0,00
+                  span.pull-left Bs.
+        div.text-center
+          button.btn-green.btn-dgray.text-uppercase colocar orden

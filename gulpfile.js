@@ -9,6 +9,7 @@ gulp.task('mover', function(){
   gulp.src('./bower_components/bootstrap/dist/css/bootstrap.min.css').pipe(gulp.dest('./dist/css'));
   gulp.src('./bower_components/bootstrap/dist/js/bootstrap.min.js').pipe(gulp.dest('./dist/js'));
   gulp.src('./bower_components/jquery/dist/jquery.min.js').pipe(gulp.dest('./dist/js'));
+  gulp.src('.bower_components/sticky-kit/jquery.sticky-kit.min.js').pipe(gulp.dest('.dist/js'));
   gulp.src('./src/img/*.*').pipe(gulp.dest('./dist/img'));
 })
 
