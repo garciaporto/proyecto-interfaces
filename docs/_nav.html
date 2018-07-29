@@ -1,0 +1,58 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="img/logo.png" class="navbar-logo"/></a>
+      <div class="pull-right">
+        <p class="text-green visible-xs-inline-block navbar-cart-text">0 Items (Bs. 0.00)</p><span>
+          <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center visible-xs-inline-block navbar-icon mr15"></button></span>
+      </div>
+    </div>
+    <form class="navbar-form navbar-right visible-xs">
+      <div class="input-group form-control input-sm">
+        <input type="text" placeholder="Buscar" class="wide-searchbar noborder"/><span class="glyphicon glyphicon-search pull-right one-one glyphicon-vpadding-5"></span>
+      </div>
+    </form>
+    <div id="menu" class="collapse navbar-collapse navbar-right menu-btn text-green text-uppercase">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Nosotros</a></li>
+        <li class="active"><a href="#">Tienda</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div><a role="button" data-toggle="collapse" data-parent="#accordion" href="#search" aria-expanded="false" aria-controls="search">
+      <button id="search-icon" class="glyphicon glyphicon-search navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon compact-navicon"></button></a><a href="#" role="button" type="button" data-toggle="modal" data-target="#log-in">
+      <button class="glyphicon glyphicon-user navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a><a href="cart.html" role="button">
+      <button class="glyphicon glyphicon-shopping-cart navbar-right img-circle one-one navbar-v-center hidden-xs navbar-icon"></button></a>
+  </div>
+  <div id="search" role="tabpanel" aria-labelledby="search-icon" class="panel-collapse collapse hidden-xs">
+    <div class="container">
+      <form class="navbar-form form-control custom-pad">
+        <div class="input-group form-control input-sm noborder">
+          <input type="text" placeholder="Buscar" class="wide-searchbar noborder"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="log-in" tabindex="-1" role="dialog" aria-labelledby="LogLabel" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+        <h4 id="LogLabel" class="modal-title text-uppercase">Ingresar</h4>
+      </div>
+      <div class="modal-body">
+        <form class="text-center">
+          <div class="form-group">
+            <input id="recipient-name" type="text" placeholder="Usuario" name="user" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <input id="recipient-name" type="password" placeholder="Password" name="psw" class="form-control"/>
+          </div>
+          <button type="button" class="btn btn-green btn-dgray text-uppercase">Ingresar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
